@@ -1,0 +1,148 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #393939; }
+
+img {
+  vertical-align: top; }
+
+html, body {
+  position: relative;
+  min-width: 1200px; }
+
+.inner {
+  width: 1200px;
+  margin: 0 auto; }
+
+.fontSize16 {
+  font-size: 16px;
+  font-weight: normal; }
+
+.banner {
+  height: 382px;
+  margin-bottom: 18px;
+  position: relative; }
+  .banner img {
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); }
+
+.nav_bread {
+  display: block;
+  margin-bottom: 70px; }
+
+.nav_bread__item {
+  display: inline-block;
+  font-size: 16px;
+  color: #393939;
+  margin-right: 10px; }
+
+.nav_bread__item_link::after {
+  content: '>';
+  display: inline-block;
+  margin-left: 10px; }
+
+.nav_bread__item_link:hover {
+  color: #c30f21; }
+
+.full {
+  display: block; }
+  .full h2 {
+    width: 1200px;
+    height: 43px;
+    margin-bottom: 28px;
+    background: url("../images/nhxy_title1.jpg") no-repeat center center; }
+
+.full__list {
+  margin-bottom: 78px; }
+  .full__list .full__list__item {
+    display: inline-block;
+    width: 280px;
+    height: 230px;
+    background: #efefef;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 21px; }
+    .full__list .full__list__item:nth-last-of-type(1) {
+      margin-right: 0; }
+    .full__list .full__list__item img {
+      margin-bottom: 15px; }
+    .full__list .full__list__item h3 {
+      font-size: 16px;
+      color: #393939; }
+    .full__list .full__list__item p {
+      font-size: 14px;
+      color: #696969;
+      text-indent: 0em; }
+    .full__list .full__list__item .love {
+      width: 52px;
+      height: 22px;
+      font-size: 12px;
+      line-height: 22px;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      display: block;
+      background: #ffffff;
+      border: 1px solid #b6b6b6;
+      border-radius: 11px;
+      padding: 0 0px 0 6px;
+      box-sizing: border-box;
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .full__list .full__list__item .love::before {
+        content: '收藏';
+        left: 2px;
+        display: inline-block; }
+      .full__list .full__list__item .love::after {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-image: url(../images/icon_love.png);
+        background-repeat: no-repeat;
+        background-position: -13px 0;
+        position: relative;
+        left: 4px;
+        top: 2px; }
+    .full__list .full__list__item .love_checked {
+      width: 65px;
+      border: none;
+      background: #c30f21;
+      color: #ffffff; }
+      .full__list .full__list__item .love_checked::before {
+        content: '已收藏';
+        position: relative;
+        left: 2px; }
+      .full__list .full__list__item .love_checked::after {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background-image: url(../images/icon_love.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        position: relative;
+        left: 4px;
+        top: 2px; }
+
+.other_tit {
+  width: 506px;
+  height: 51px;
+  margin: 109px auto 30px auto;
+  background: url("../images/public_title.jpg"); }

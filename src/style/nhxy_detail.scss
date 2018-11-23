@@ -1,0 +1,109 @@
+.nav_bread {
+  margin-bottom: 25px;
+  margin-top: 60px;
+}
+
+h1 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.swiper_nhxy {
+  width: 100%;
+  //height:740px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #eee;
+  margin-bottom: 30px;
+  position: relative;
+  .love {
+    width: 70px;
+    height: 29px;
+    font-size: 16px;
+    line-height: 26px;
+    position: absolute;
+    top: -65px;
+    right: 0;
+    display: block;
+    background: #ffffff;
+    border: 1px solid #b6b6b6;
+    border-radius: 15px;
+    padding: 0 0px 0 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    &::before {
+      content: '收藏';
+      position: relative;
+      left: 2px;
+      display: inline-block;
+    }
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-image: url(../images/icon_love_big.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: relative;
+      left: 6px;
+      top: 2px;
+    }
+  }
+  .love_checked {
+    width: 87px;
+    border: none;
+    background: #c30f21;
+    color: #ffffff;
+    &::before {
+      content: '已收藏';
+      position: relative;
+      left: 4px;
+    }
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-image: url(../images/icon_love_big.png);
+      background-repeat: no-repeat;
+      background-position: -16px 0;
+      position: relative;
+      left: 9px;
+      top: 2px;
+    }
+  }
+  .swiper-container {
+    .swiper-slide {
+      width: 100px;
+      height: 690px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .swiper-button-prev {
+      width: 70px;
+      height: 70px;
+      background: url("../images/icon_swiper_pre.jpg") no-repeat center center;
+    }
+    .swiper-button-next {
+      width: 70px;
+      height: 70px;
+      background: url("../images/icon_swiper_next.jpg") no-repeat center center;
+    }
+  }
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+p {
+  text-indent: 2em;
+  line-height: 1.5;
+}
